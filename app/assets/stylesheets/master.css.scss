@@ -97,3 +97,7 @@ h2 span {
 ::selection {
 	background-color: #FF4A3D;
 }
+
+@-ms-viewport{
+  width: device-width;
+}

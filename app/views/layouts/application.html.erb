@@ -5,11 +5,12 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
 		<div class="col-xs-3">
-		  <%= link_to root_path :class => 'logo' do %>
+		  <%= link_to root_path, :class => 'logo' do %>
 			<div class="circle">
 				<br />
 				What Would
@@ -64,6 +65,7 @@
 				<%= flash[:error].html_safe %>
 			</div>
 		<% end %>
+		<br class="clear" />
 		<%= yield %>
 	</div>
 
@@ -73,7 +75,7 @@
 				<%= link_to "This isn't enough, I need more Bayliss", root_path, :class => 'next-quote' %>
 			</div>
 			<div class="col-xs-12 col-sm-6 footer-blurb">
-				Proudly assembled in the People's Republic of Portland, Oregon.
+				Proudly assembled in the People's Republic of Portland.
 			</div>
 		</div>
 	</div>
