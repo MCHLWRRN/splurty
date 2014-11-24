@@ -38,11 +38,11 @@
 	      <div class="modal-content">
 	        <div class="modal-header">
 	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	          <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+	          <h4 class="modal-title" id="myModalLabel">Contribute Your Lyric</h4>
 	        </div>
 	        <%= simple_form_for Quote.new do |f| %>
 	        	<div class="modal-body">
-					<%= f.input :saying, :label => "What is the saying you want to add?", :placeholder => "The only certainty is changes" %>
+					<%= f.input :saying, :label => "What is the lyric you want to add?", :placeholder => "The only certainty is changes" %>
 					<br />
 					<%= f.input :author, :label => "Who is the author?", :placeholder => 'Brendan Bayliss' %>
 				</div>
